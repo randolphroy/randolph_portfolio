@@ -1,7 +1,5 @@
 import React from 'react'
-import {FaArrowRight} from "react-icons/fa"
 import SocialMedia from "../components/SocialMedia"
-import RandolphResume from "../assets/portfolio/Randolph_Resume_8-16-designed.pdf"
 
 
 

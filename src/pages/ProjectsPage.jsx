@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import laCanchaLogo from '../assets/portfolio/la-cancha-logo.jpg'
 import TravelMule from '../assets/portfolio/travelmule-white-big.jpg'
 import ExciteBike from '../assets/portfolio/excitebike.jpg'
