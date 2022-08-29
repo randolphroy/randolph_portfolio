@@ -1,5 +1,6 @@
-import React from 'react'
-import SocialMedia from "../components/SocialMedia"
+import React from 'react';
+import SocialMedia from "../components/SocialMedia";
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -12,18 +13,40 @@ const Home = () => {
           <h2 className='text-4xl sm:text-4xl font-normal'>
             RANDOLPH ROY
           </h2>
-          <p className='text-[#1d1f20] py-4 max-w-md'>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+              .typeString(" Software Developer")
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString("Technical Project Manager")
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString("Creative Manager")
+              .pauseFor(2000)
+              .deleteAll()
+              .start();
+            }}
+            options={{
+              autoStart: true,
+              loop: true,
+            }}
+             />
+{ /*           <p className='text-[#1d1f20] py-4 max-w-md'>
           Software Developer
-          </p>
+          </p> */}
         <div>
-            <button 
-            className='inline-block px-6 py-2 my-3 border-2 border-[#0c0f0a] rounded text-sm items-center hover:bg-[#0c0f0a] hover:border-[#0c0f0a] hover:text-[#f4f7f5]'
+            <a
             href='https://drive.google.com/file/d/1DSmpH3iGZP2uWCzok8jNen-BZWU3L20r/view?usp=sharing'
             target = "_blank"
+            rel="noreferrer"
             >
-              Download Résumé
+            <button 
+            className='inline-block px-2 py-1 my-3 border-2 border-[#0c0f0a] rounded text-xs items-center hover:bg-[#0c0f0a] hover:border-[#0c0f0a] hover:text-[#f4f7f5]'            >
+              View Résumé
              
             </button>
+            </a>
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBars, FaTimes, FaGithub, FaLinkedinIn, FaFileDownload } from 'react-icons/fa'
+import { FaBars, FaTimes} from 'react-icons/fa'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
