@@ -29,9 +29,9 @@ return (
         </div>
 
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#f4f7f5] flex flex-col justify-center items-center'}>
-            <NavLink to='/' className='py-6 text-xl'>home</NavLink>
-            <NavLink to='/about' className='py-6 text-xl'>about</NavLink>
-            <NavLink to='/projects' className='py-6 text-xl'>projects</NavLink>
+            <NavLink to='/' onClick={() => setNav(!nav)} className='py-6 text-xl'>home</NavLink>
+            <NavLink to='/about' onClick={() => setNav(!nav)} className='py-6 text-xl'>about</NavLink>
+            <NavLink to='/projects' onClick={() => setNav(!nav)} className='py-6 text-xl'>projects</NavLink>
         </ul>
         
 
